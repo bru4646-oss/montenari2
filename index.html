@@ -17,7 +17,7 @@
     <header class="header-principal">
         <div class="container header-content">
             <div class="logo-container">
-                <img src="vetorização logo.png" class="logo-header">
+                <img src="vetorizacao-logo.svg" class="logo-header" alt="Montenari logo">
                 <div class="marca-texto">
                     <h1>MONTENARI</h1>
                     <h3>TRATTORIA</h3>
@@ -45,7 +45,7 @@
     <main>
         <section id="home" class="intro-texto">
             <div class="intro-texto2">
-                <img src="vetorização logo.png" class="logo-header">
+                <img src="vetorizacao-logo.svg" class="logo-header" alt="Montenari logo">
                 <h1>Benvenuto</h1>
                 <h3>
                    Conheça a tradição da família Montenari,
@@ -89,7 +89,7 @@
                 <section class="intro-texto">
                     <p>
                         na MONTENARI TRATTORIA, celebramos os ingredientes sazonais em pratos
-                        que honram a tradição e abraçam a inovação. uma experiência
+                        que honram a tradição e abraçam a inovação. uma experiencia
                         gastronômica única, do prato à taça.
                     </p>
                </section>
@@ -206,12 +206,13 @@
 
         <section id="reservas" class="cta-block">
             <div class="container">
-                <form action="bru.desv@gmail.com" method="post" enctype="text/plain">
+                <!-- mailto fallback; replace with server/form handler if desired -->
+                <form action="mailto:bru.desv@gmail.com" method="GET">
                     <h1>Reserva</h1>
                     <fieldset>
                         <div>
-                            <label for="endereço">Unidade:</label>
-                            <input type="text" id="endereço" placeholder="Unidade Paulista" name="endereço" required />
+                            <label for="endereco">Unidade:</label>
+                            <input type="text" id="endereco" placeholder="Unidade Paulista" name="endereco" required />
                         </div>
                         <div>
                             <label for="nome">Nome:</label>
@@ -224,11 +225,11 @@
                         <div class="form2">
                             <div class="form3">
                                 <label for="data">Data da Reserva:</label>
-                                <input type="date" id="nascimento" name="data" required />
+                                <input type="date" id="data" name="data" required />
                             </div>
                             <div class="form4">
-                                <label for="nascimento">Horario:</label>
-                                <input type="time" id="nascimento" name="nascimento" required />
+                                <label for="horario">Horario:</label>
+                                <input type="time" id="horario" name="horario" required />
                             </div>
                         </div>
                         <button type="submit" class="cta-button">Enviar</button>
@@ -240,7 +241,7 @@
     </main>
 
     <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0854822870992!2d-46.65388192589298!3d-23.565373178796964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2[...]" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0854822870992!2d-46.65388192589298!3d-23.565373178796964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c12..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <div>
             <a href="https://wa.me/5511932365265" target="_blank" rel="noopener noreferrer">
                 <img src="whatsapp-50.png" alt="Fale conosco no WhatsApp">
@@ -251,7 +252,7 @@
         </div>
         <div>
             <p>Termos de uso-Politica privada</p>
-            <P>&copy;2025 Montenari Trattoria</P>
+            <p>&copy;2025 Montenari Trattoria</p>
         </div>
     </footer>
 
