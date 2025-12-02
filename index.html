@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="cardápio e reservas da trattoria montenhare.">
     <title>Montanari Trattoria</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="sty_le.css">
 </head>
 <body>
@@ -206,8 +206,12 @@
 
         <section id="reservas" class="cta-block">
             <div class="container">
-                <!-- mailto fallback; replace with server/form handler if desired -->
-                <form action="mailto:bru.desv@gmail.com" method="GET">
+                <!-- FormSubmit integration: POST to formsubmit.co -->
+                <form action="https://formsubmit.co/bru.desv@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Reserva Montenari via Site">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://bru4646-oss.github.io/montenari2/thanks.html">
+
                     <h1>Reserva</h1>
                     <fieldset>
                         <div>
@@ -232,6 +236,12 @@
                                 <input type="time" id="horario" name="horario" required />
                             </div>
                         </div>
+
+                        <div>
+                            <label for="contato">Telefone ou Email:</label>
+                            <input type="text" id="contato" name="contato" placeholder="Telefone ou email para contato" required />
+                        </div>
+
                         <button type="submit" class="cta-button">Enviar</button>
                     </fieldset>
                 </form>
@@ -251,7 +261,7 @@
             </a>
         </div>
         <div>
-            <p>Termos de uso-Politica privada</p>
+            <p>Termos de uso‑Política privada</p>
             <p>&copy;2025 Montenari Trattoria</p>
         </div>
     </footer>
